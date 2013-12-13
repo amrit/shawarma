@@ -39,6 +39,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    gumby-rails (1.1)
     haml (4.0.4)
       tilt
     haml-rails (0.4)
@@ -110,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  gumby-rails
   haml (>= 3.0.0)
   haml-rails
   jquery-rails
