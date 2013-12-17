@@ -18,7 +18,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'gumby-rails'
+  gem 'gumby'
+  gem 'jquery-rails'
+  gem 'modernizr-rails'
 end
 
 
@@ -38,6 +40,5 @@ end
 # To use debugger
 # gem 'debugger'
 
-gem "haml", ">= 3.0.0"
-gem "haml-rails"
-gem "jquery-rails"
+gem 'haml', '>= 3.0.0'
+gem 'haml-rails'

@@ -39,7 +39,9 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
-    gumby-rails (1.1)
+    gumby (0.0.5)
+      jquery-rails
+      modernizr-rails
     haml (4.0.4)
       tilt
     haml-rails (0.4)
@@ -58,6 +60,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    modernizr-rails (2.7.0)
     multi_json (1.8.2)
     pg (0.17.0)
     polyglot (0.3.3)
@@ -111,10 +114,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  gumby-rails
+  gumby
   haml (>= 3.0.0)
   haml-rails
   jquery-rails
+  modernizr-rails
   pg
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

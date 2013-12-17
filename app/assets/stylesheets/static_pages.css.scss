@@ -1,0 +1,50 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*
+{
+  border:0;
+  margin:0;
+  outline:0;
+  padding:0;
+}
+
+body
+{
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -webkit-background-size:cover;
+  /*background-color: #FF9640;*/
+  font-size:18px;
+  line-height:27px;
+}
+
+h1 {
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-size: 70px;
+    line-height: 100px;
+    color: #E67E22;
+}
+
+h3 {
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+div.centered.twelve.columns{
+  margin-top: 10%;
+  text-align: center;
+}
+
+p.step.one{
+  margin-top: 50px;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  color: black;
+
+}
+
+
+

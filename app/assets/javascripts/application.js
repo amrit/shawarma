@@ -10,5 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//= require jquery
+//= require jquery_ujs
 //= require gumby
-//= require_tree .
+//= require legacy
+//= require picker.js
+//= require picker.date.js
+//= require picker.time.js
+//= require index
