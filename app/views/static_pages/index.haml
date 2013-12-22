@@ -1,12 +1,51 @@
-%div.row
-	%div.centered.twelve.columns
-		%h1
-			Shawarma
+/ %div#head
+/ 	%h1
+/ 		Shawarma
 
-	%div.centered.six.columns
-		%p.step.one
-			Shawarma matches your catering needs with a business willing to donate food for your event! To get started, choose the date of your event below!
+/ 	%h3
+/ 		Shawarma matches your catering needs with a business willing to donate food for your event! To get started, choose the date of your event below!
 
 
-	%fieldset
-		%input#input_date{type: 'text'}
+/ 	%fieldset
+/ 		%form#datepick
+/ 			%input#input_date{type: 'text'}
+/ 			%input.button{type: 'submit'}
+
+!!!
+%html{lang: "en"}
+	%head
+		%meta{charset: "utf-8"}/
+		%meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+		%meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+		%meta{content: "Shawarma", name: "description"}/
+		%meta{content: "Shawarma", name: "Amrit Ayalur"}/
+		%link{href: "../../docs-assets/ico/favicon.png", rel: "shortcut icon"}/
+		%title Shawarma
+
+	%body
+		.container
+			/ Static navbar
+			.navbar.navbar-default{role: "navigation"}
+				.navbar-header
+					%button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+						%span.sr-only Toggle navigation
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					%a.navbar-brand{href: "/"} Shawarma
+				.navbar-collapse.collapse
+
+					%ul.nav.navbar-nav.navbar-right
+						%li.active
+							%a{href: "./"} About Us
+						%li
+							%a{href: "../navbar-static-top/"} Contact Us
+				/ /.nav-collapse
+			/ Main component for a primary marketing message or call to action
+			.jumbotron
+				%h1 Shawarma
+				%p Welcome to Shawarma! Shawarma matches your catering needs with a business willing to donate food for your event! To get started, choose the date of your event below!
+				%p
+					%input#datepicker{type: 'text', class: 'span2'}
+
+					%a.btn.btn-lg.btn-primary{href: "#", role: "button"} Go!

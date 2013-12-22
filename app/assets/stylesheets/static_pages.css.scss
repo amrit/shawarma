@@ -1,50 +1,32 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// div#head {
+// 	text-align: center;
+// 	padding-top: 6%;
+// }
 
+// h1 {
+//     font-family: 'Lobster', Georgia, Times, serif;
+//     font-size: 90px;
+//     line-height: 100px;
+//     color: #E67E22;
+// }
 
-*
-{
-  border:0;
-  margin:0;
-  outline:0;
-  padding:0;
+// h3 {
+//     font-family: 'Cabin', Helvetica, Arial, sans-serif;
+//     font-size: 20px;
+//     line-height: 40px;
+//     margin: 0 auto;
+//     width: 34%;
+// }
+
+// fieldset {
+// 	width: 20%;
+// 	position: relative;
+// 	display: block;
+// 	float: right;
+// 	padding-right: 39%;
+// 	padding-top: 4%;
+// }
+
+div.jumbotron { 
+	text-align: center;
 }
-
-body
-{
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  -webkit-background-size:cover;
-  /*background-color: #FF9640;*/
-  font-size:18px;
-  line-height:27px;
-}
-
-h1 {
-    font-family: 'Lobster', Georgia, Times, serif;
-    font-size: 70px;
-    line-height: 100px;
-    color: #E67E22;
-}
-
-h3 {
-    font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    line-height: 25px;
-}
-
-div.centered.twelve.columns{
-  margin-top: 10%;
-  text-align: center;
-}
-
-p.step.one{
-  margin-top: 50px;
-  font-family: 'Cabin', Helvetica, Arial, sans-serif;
-  color: black;
-
-}
-
-
-

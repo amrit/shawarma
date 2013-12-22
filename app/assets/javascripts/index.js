@@ -1,3 +1,3 @@
-$(document).ready(function () {
-	$('#input_date').pickadate();
+$( document ).ready(function() {
+    $('#datepicker').datepicker();
 });

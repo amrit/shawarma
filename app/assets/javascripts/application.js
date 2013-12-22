@@ -12,9 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require gumby
-//= require legacy
-//= require picker.js
-//= require picker.date.js
-//= require picker.time.js
+//= require bootstrap
+//= require bootstrap-datepicker
 //= require index
+
