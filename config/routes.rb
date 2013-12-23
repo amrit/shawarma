@@ -1,6 +1,8 @@
 Shawarma::Application.routes.draw do
 
-  root to: 'StaticPages#index'
+  root to: 'Orders#new'
+
+  resources :orders
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
