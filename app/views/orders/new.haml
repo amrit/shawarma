@@ -31,10 +31,10 @@
 			/ Main component for a primary marketing message or call to action
 			.jumbotron
 				%h1 Shawarma
-				%p Welcome to Shawarma! Shawarma matches your catering needs with a business willing to donate food for your event! To get started, choose the date of your event below!
+				%p Shawarma matches your catering needs with a business willing to donate food for your event! 
 
-				%button#open-wizard.btn.btn-primary
-					Go!
+				%button#open-wizard.btn.btn-primary.btn-lg
+					Let's get started!
 
 				/ %form{class: 'form-inline', role: 'form'}
 				/ 	=form_for :order, :url => {:controller => 'orders', }
@@ -42,25 +42,61 @@
 
 				/ 	%button.btn.btn-primary.btn-lg{type: 'button'} Go!
 
-
 				#satellite-wizard.wizard{"data-title" => "Place Order"}
-					.wizard-card{"data-cardname" => "date"}
-						%h3 Choose a date!
+					.wizard-card{"data-cardname" => "date-selection"}
+						%h3 Event Date
 						.wizard-input-section
-							.form-group
-								.col-sm-6
-									%input#datepicker{type: "text", :value => (Time.now.strftime("%m/%d/%Y"))}
+							%p When's your event?
+							.control-group
+								%input#datepicker{name: "order[date]",type: "text",class: "form-control", :value => (Time.now.strftime("%m/%d/%Y"))}
 		
-						.wizard-card{"data-cardname" => "restaurant"}
+						.wizard-card{"data-cardname" => "restaurant-selection"}
 							%h3 Restaurant Selection
 							.wizard-input-section
 								%p
-									Choose a restaurant!
-								%p
-									Number of guests expected?
-						.wizard-card.wizard-card-overlay{"data-cardname" => "information"}
-							%h3 Organization/Event Information
+									%b
+										These restaurants may be available for catering on the day of your event. Choose one!
+								%select.form-control{name: "order[restaurant]"}
+									-for restaurant in @restaurants
+										%option= restaurant.name
+
+						.wizard-card.wizard-card-overlay{"data-cardname" => "organization-information"}
+							%h3 Personal Information
 							.wizard-input-section
 								%p
-									Please fill out the form below, so we can get to know you better!
-								
+									Please fill out the form below, so we can get to know your organization better.
+								.form-group
+									%label{for: 'orgName'}
+										Name of Organization
+									.col-sm-10
+										%input.form-control{name: "order[organization]", type: 'text', id: 'orgName', placeholder: 'Sigma Eta Pi'}
+								.form-group
+									%label{for: 'contactName'}
+										Your Name
+									.col-sm-10
+										%input.form-control{name: "order[contact_name]",type: 'text', id: 'contactName', placeholder: 'Anant Agarwal'}
+								.form-group
+									%label{for: 'contactEmail'}
+										Your Email
+									.col-sm-10
+										%input.form-control{name: "order[contact_email]", type: 'text', id: 'contactEmail', placeholder: 'anant@ucberkeleysep.com'}
+								.form-group
+									%label{for: 'contactPhone'}
+										Your Phone Number
+									.col-sm-10
+										%input.form-control{name: "order[contact_phone]", type: 'tel', id: 'contactPhone', placeholder: '555-555-5555'}
+									
+						.wizard-card{"data-cardname" => "event-information"}
+							%h3 Event Information
+							.wizard-input-section
+								%p
+									Please fill out the form below so we can get more information about your event.
+								.form-group
+									%label{for: 'guestsExpected'}
+										Attendees Expected
+									.col-sm-10
+										%input.form-control{name: "order[attendees]", type: 'number', id: 'attendees', placeholder: '40'}
+								.form-group
+									%label
+										%input{type: 'checkbox', value: ''}
+											Willing to accept catering from another vendor if my choice is unavailable

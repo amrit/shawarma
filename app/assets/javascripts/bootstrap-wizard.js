@@ -419,11 +419,11 @@
             keyboard: true,
             backdrop: true,
             show: false,
-            submitUrl: "",
+            submitUrl: "/orders",
             showCancel: false,
             showClose: true,
             progressBarCurrent: false,
-            increaseHeight: 0,
+            increaseHeight: 300,
             contentHeight: 300,
             contentWidth: 580,
             buttons: {

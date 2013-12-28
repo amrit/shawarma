@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap-datepicker
 //= require bootstrap-wizard
+//= require bootstrap-datepicker
 //= require chosen
 //= require prettify
 //= require orders
+//= require date
