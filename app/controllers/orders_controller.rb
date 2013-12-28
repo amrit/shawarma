@@ -7,9 +7,11 @@ class OrdersController < ApplicationController
 
 	def create
     @order = Order.new(params[:order])
-    @order.save
-    respond_to do |format|
-			format.js {render :js => "alert('Thanks');"}
+    if @order.save
+	    respond_to do |format|
+				format.js {render :js => "alert('Thanks');"}
+			end
+			OrderMailer.order_confirmation(@order).deliver
 		end
 	end
 
