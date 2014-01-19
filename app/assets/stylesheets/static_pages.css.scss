@@ -1,28 +1,19 @@
-// div#head {
-// 	text-align: center;
-// 	padding-top: 6%;
-// }
+div.jumbotron { 
+	text-align: center;
+}
+h1 {
+    color: #E67E22;
+}
 
-// h1 {
-//     font-family: 'Lobster', Georgia, Times, serif;
-//     font-size: 90px;
-//     line-height: 100px;
-//     color: #E67E22;
-// }
+p {
+	text-align: left;
+	margin-top: 50px;
+}
 
-// h3 {
-//     font-family: 'Cabin', Helvetica, Arial, sans-serif;
-//     font-size: 20px;
-//     line-height: 40px;
-//     margin: 0 auto;
-//     width: 34%;
-// }
+ul {
+	list-style: none;
+}
 
-// fieldset {
-// 	width: 20%;
-// 	position: relative;
-// 	display: block;
-// 	float: right;
-// 	padding-right: 39%;
-// 	padding-top: 4%;
-// }
+#contact p {
+	text-align: center;
+}

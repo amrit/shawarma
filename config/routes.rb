@@ -3,6 +3,9 @@ Shawarma::Application.routes.draw do
   root to: 'Orders#new'
 
   resources :orders
+
+  match '/about' => "static_pages#about", :as => :about
+  match '/contact' => "static_pages#contact", :as => :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
