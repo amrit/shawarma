@@ -55,26 +55,18 @@
 						.wizard-input-section
 							%p
 								Please fill out the form below, so we can get to know your organization better.
-							.form-group
-								%label{for: 'orgName'}
-									Name of Organization
+							.form-group									
 								.col-sm-10
-									%input.form-control{name: "order[organization]", type: 'text', id: 'orgName', placeholder: 'Sigma Eta Pi'}
+									%input.form-control{name: "order[organization]", type: 'text', id: 'orgName', placeholder: 'Name of Organization'}
 							.form-group
-								%label{for: 'contactName'}
-									Your Name
 								.col-sm-10
-									%input.form-control{name: "order[contact_name]",type: 'text', id: 'contactName', placeholder: 'Anant Agarwal'}
+									%input.form-control{name: "order[contact_name]",type: 'text', id: 'contactName', placeholder: 'Your Name'}
 							.form-group
-								%label{for: 'contactEmail'}
-									Your Email
 								.col-sm-10
-									%input.form-control{name: "order[contact_email]", type: 'text', id: 'contactEmail', placeholder: 'anant@ucberkeleysep.com'}
+									%input.form-control{name: "order[contact_email]", type: 'text', id: 'contactEmail', placeholder: 'Your Email'}
 							.form-group
-								%label{for: 'contactPhone'}
-									Your Phone Number
 								.col-sm-10
-									%input.form-control{name: "order[contact_phone]", type: 'tel', id: 'contactPhone', placeholder: '555-555-5555'}
+									%input.form-control{name: "order[contact_phone]", type: 'tel', id: 'contactPhone', placeholder: 'Your Phone Number'}
 								
 					.wizard-card{"data-cardname" => "event-information"}
 						%h3 Event Information
@@ -82,14 +74,15 @@
 							%p
 								Please fill out the form below so we can get more information about your event.
 							.form-group
-								%label{for: 'guestsExpected'}
-									Attendees Expected
 								.col-sm-10
+									%label{for: 'guestsExpected'}
+										Attendees Expected
 									%input.form-control{name: "order[attendees]", type: 'number', id: 'attendees', placeholder: '40'}
 							.form-group
-								%label
-									%input{type: 'checkbox', value: ''}
-										Willing to accept catering from another vendor if my choice is unavailable
+								.col-sm-10#checkbox
+									%label
+										%input{type: 'checkbox', value: ''}
+											Willing to accept catering from another vendor if my choice is unavailable
 
 					.wizard-success
 						%h3 IT WORKED
