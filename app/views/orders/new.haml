@@ -1,3 +1,4 @@
+=stylesheet_link_tag("orders")
 
 %body
 	.container
@@ -26,17 +27,12 @@
 			%button#open-wizard.btn.btn-primary.btn-lg
 				Let's get started!
 
-			/ %form{class: 'form-inline', role: 'form'}
-			/ 	=form_for :order, :url => {:controller => 'orders', }
-			/ 	%input#datepicker{type: 'text', :value => (Time.now.strftime("%m/%d/%Y"))}
-
-			/ 	%button.btn.btn-primary.btn-lg{type: 'button'} Go!
 
 			#satellite-wizard.wizard{"data-title" => "Place Order"}
 				.wizard-card{"data-cardname" => "date-selection"}
 					%h3 Event Date
 					.wizard-input-section
-						%p When's your event?
+						%p Please select the date of your event.
 						.control-group
 							%input#datepicker{name: "order[date]",type: "text",class: "form-control", :value => (Time.now.strftime("%m/%d/%Y"))}
 	
@@ -85,4 +81,10 @@
 											Willing to accept catering from another vendor if my choice is unavailable
 
 					.wizard-success
-						%h3 IT WORKED
+						.panel.panel-success
+							.panel-heading
+								%h3.panel-title Thanks!
+							.panel-body
+								We've received your request, and will get back to you shortly.
+								%button#close-wizard.btn.btn-primary
+									Exit

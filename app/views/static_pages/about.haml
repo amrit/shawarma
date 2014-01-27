@@ -21,10 +21,25 @@
 		/ Main component for a primary marketing message or call to action
 		.jumbotron
 			%h1 About Us
-			%p Shawarma was born out of a need for an efficient medium of communication between restaurants around Berkeley, and the students of UC Berkeley.
-
+			%p Shawarma was born out of a need for an efficient medium of communication between restaurants around UC Berkeley, and student organizations on campus.
 			%p Our team consists of:
-			%ul
-				%li Grace Chen 
-				%li Anant Agarwal
-				%li Amrit Ayalur
+
+			.row
+				.col-sm-6.col-md-4
+					.thumbnail
+						%img{:src => "/assets/grace.jpg"}
+						.caption
+							%h3 Grace Chen
+							%p Business Lead
+				.col-sm-6.col-md-4
+					.thumbnail
+						%img{:src => "/assets/anant.jpg"}
+						.caption
+							%h3 Anant Agarwal
+							%p Business Lead
+				.col-sm-6.col-md-4
+					.thumbnail
+						%img{:src => "/assets/amrit-square.jpg"}
+						.caption
+							%h3 Amrit Ayalur
+							%p Engineering Lead

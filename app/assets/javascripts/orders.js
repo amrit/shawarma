@@ -8,8 +8,13 @@ $(document).ready(function() {
     backdrop: "static"
   });
 
-  return $("#open-wizard").click(function(e) {
+  $("#open-wizard").click(function(e) {
     e.preventDefault();
     return wizard.show();
+  });
+
+  $("#close-wizard").click(function(e) {
+    e.preventDefault();
+    return wizard.close();
   });
 });

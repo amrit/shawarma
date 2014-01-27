@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require bootstrap
- *= require orders
  *= require navbar
  *= require datepicker
  *= require bootstrap-wizard
