@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
     	respond_to do |format|
 				format.js {render :status => 200, :nothing => true}
 			end
-			OrderMailer.order_confirmation(@order).deliver
+			# OrderMailer.order_confirmation(@order).deliver
 	  end
 	end
 
