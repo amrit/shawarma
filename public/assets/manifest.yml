@@ -19,6 +19,10 @@ application.js: application-889e53ee41ee155dfe03ebe62d7e8292.js
 application/index.js: application-889e53ee41ee155dfe03ebe62d7e8292.js
 application.css: application-b72888719ed8a6eebde735223a8ede8f.css
 application/index.css: application-b72888719ed8a6eebde735223a8ede8f.css
+orders.css: orders-dd08049b78ff827f856f29417eb03956.css
+orders/index.css: orders-dd08049b78ff827f856f29417eb03956.css
+static_pages.css: static_pages-518f53556b7dcbaf6c3680d8808e5428.css
+static_pages/index.css: static_pages-518f53556b7dcbaf6c3680d8808e5428.css
 modernizr.js: modernizr-27121d45b8557447b3f2f4c1fcd75ed9.js
 modernizr/index.js: modernizr-27121d45b8557447b3f2f4c1fcd75ed9.js
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
