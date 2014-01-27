@@ -24,7 +24,6 @@ group :assets do
 end
 
 
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -43,3 +42,4 @@ end
 gem 'haml', '>= 3.0.0'
 gem 'haml-rails'
 gem 'bootstrap-application-wizard-rails'
+gem 'seed_dump'
