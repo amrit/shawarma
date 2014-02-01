@@ -9,6 +9,7 @@ Shawarma::Application.routes.draw do
 
   match '/about' => "static_pages#about", :as => :about
   match '/contact' => "static_pages#contact", :as => :contact
+  match '/partners' => "static_pages#partners", :as => :partners
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

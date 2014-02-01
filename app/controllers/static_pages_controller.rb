@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
 		@message = Message.new
 	end
 
+	def partners
+	end
+
 end
