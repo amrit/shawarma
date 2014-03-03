@@ -64,4 +64,12 @@ Shawarma::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  ActionMailer::Base.smtp_settings = {
+    address:        'smtp.gmail.com', # default: localhost
+    port:           '587',     
+    domain:         'gmail.com',
+    user_name:       'a.ayalur@gmail.com',
+    password:       'kalahari',
+    authentication: :plain                 # :plain, :login or :cram_md5
+  }
 end

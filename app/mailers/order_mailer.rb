@@ -1,8 +1,10 @@
 class OrderMailer < ActionMailer::Base
-  default from: "no-reply@shawarma.com"
+  default from: "a.ayalur@gmail.com"
 
   def order_confirmation(order)
   	@order = order
-  	mail(to: "slicekick@gmail.com", subject: "New Order!")
+  	mail(to: "amrit@berkeley.edu", subject: "New Order!")
   end
 end
+
+
